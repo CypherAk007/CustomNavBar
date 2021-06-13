@@ -42,15 +42,16 @@ public class MainActivity extends AppCompatActivity {
                     case 0:
                         transaction.replace(R.id.fragment_container,new HomeFragment() );
                         break;
-                        case 1:
-                            transaction.replace(R.id.fragment_container,new SearchFragment());
+                    case 1:
+                        transaction.replace(R.id.fragment_container,new CartFragment());
                         break;
                         case 2:
-                            transaction.replace(R.id.fragment_container,new CartFragment());
+                            transaction.replace(R.id.fragment_container,new SearchFragment());
                         break;
-                        case 3:
-                            transaction.replace(R.id.fragment_container,new SettingsFragment());
-                        break;
+
+//                        case 3:
+//                            transaction.replace(R.id.fragment_container,new SettingsFragment());
+//                        break;
 
                 }
                 transaction.commit();
